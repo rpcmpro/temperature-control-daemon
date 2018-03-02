@@ -16,29 +16,36 @@ This file is pure JSON format
 
 First level is name of your RPCM
 
+```
 {
   "RPCM1" : {},
   "RPCM2" : {}
 }
+```
 
 Second level (inside your RPCM name):
 
+```
 {
   "api_address":"ip.ad.dr.ess",
   "outlets": {"0":{},"1":{},"2":{},"3":{},"4":{},"5":{},"6":{},"7":{},"8":{},"9":{}}
 }
+```
 
 Outlet level:
 
+```
 {
   "offTemp":50,
   "onTemp":30
 }
+```
 
 See example temperatureControl.conf file
 
 ## Usage
 
+```
 ruby temperatureControl.rb -h
 
 Temperature Control Daemon for RPCM ME (http://rpcm.pro)
@@ -48,6 +55,7 @@ Usage: temperatureControl.rb [options]
     -l, --[no-]log                   Save log to file
     -v, --verbose                    Run verbosely
     -w, --working-directory PATH     Specify working directory (default current directory)
+```
 
 ## License
 
