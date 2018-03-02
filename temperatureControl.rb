@@ -8,7 +8,7 @@ class TemperatureControl
   @@daemonize = false
   @@workingDirectory = Dir.pwd
   @@loggingToFile = true
-  @@version = "0.1.1"
+  @@version = "0.1.2"
 
   def self.readConfig
 
